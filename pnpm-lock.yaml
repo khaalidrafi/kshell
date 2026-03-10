@@ -9,14 +9,14 @@ importers:
   .:
     dependencies:
       '@astrojs/mdx':
-        specifier: 5.0.0-beta.12
-        version: 5.0.0-beta.12(astro@6.0.0-beta.20(@types/node@24.3.0)(rollup@4.59.0)(typescript@5.9.2))
+        specifier: 5.0.0
+        version: 5.0.0(astro@6.0.0(@types/node@24.3.0)(rollup@4.59.0)(typescript@5.9.2))
       '@astrojs/node':
-        specifier: 10.0.0-beta.9
-        version: 10.0.0-beta.9(astro@6.0.0-beta.20(@types/node@24.3.0)(rollup@4.59.0)(typescript@5.9.2))
+        specifier: 10.0.0
+        version: 10.0.0(astro@6.0.0(@types/node@24.3.0)(rollup@4.59.0)(typescript@5.9.2))
       '@astrojs/sitemap':
-        specifier: 3.6.1-beta.3
-        version: 3.6.1-beta.3
+        specifier: 3.7.1
+        version: 3.7.1
       '@iconify-json/lucide':
         specifier: ^1.2.20
         version: 1.2.20
@@ -30,11 +30,11 @@ importers:
         specifier: ^1.26.1
         version: 1.26.1
       astro:
-        specifier: 6.0.0-beta.20
-        version: 6.0.0-beta.20(@types/node@24.3.0)(rollup@4.59.0)(typescript@5.9.2)
+        specifier: 6.0.0
+        version: 6.0.0(@types/node@24.3.0)(rollup@4.59.0)(typescript@5.9.2)
       astro-expressive-code:
         specifier: ^0.38.3
-        version: 0.38.3(astro@6.0.0-beta.20(@types/node@24.3.0)(rollup@4.59.0)(typescript@5.9.2))
+        version: 0.38.3(astro@6.0.0(@types/node@24.3.0)(rollup@4.59.0)(typescript@5.9.2))
       sharp:
         specifier: ^0.33.5
         version: 0.33.5
@@ -69,29 +69,29 @@ packages:
   '@astrojs/compiler@3.0.0':
     resolution: {integrity: sha512-MwAbDE5mawZ1SS+D8qWiHdprdME5Tlj2e0YjxnEICvcOpbSukNS7Sa7hA5PK+6RrmUr/t6Gi5YgrdZKjbO/WPQ==}
 
-  '@astrojs/internal-helpers@0.8.0-beta.3':
-    resolution: {integrity: sha512-JLW9+DeEYy8pGOCxtLkWtCutG/v0PH5yzIt+6zyuk1Z8A/H4sJ638aCYkYC+imc9bxk34MihGgEugS0QeBdeEw==}
+  '@astrojs/internal-helpers@0.8.0':
+    resolution: {integrity: sha512-J56GrhEiV+4dmrGLPNOl2pZjpHXAndWVyiVDYGDuw6MWKpBSEMLdFxHzeM/6sqaknw9M+HFfHZAcvi3OfT3D/w==}
 
-  '@astrojs/markdown-remark@7.0.0-beta.11':
-    resolution: {integrity: sha512-CeTv6P5l5KFUiL+fu0hIkTwVsyQrYNTIzq7SaTVS4eHNS21PGORdZ82FUEk2aYQPutUs+QWocvXkQK3NGfQ+fQ==}
+  '@astrojs/markdown-remark@7.0.0':
+    resolution: {integrity: sha512-jTAXHPy45L7o1ljH4jYV+ShtOHtyQUa1mGp3a5fJp1soX8lInuTJQ6ihmldHzVM4Q7QptU4SzIDIcKbBJO7sXQ==}
 
-  '@astrojs/mdx@5.0.0-beta.12':
-    resolution: {integrity: sha512-cWS3SqiHeoJ3sBwyC6u8RTMrLipp2CvzfgPkBkNjmgRTnIOOORMp25R5NYfhhXCu0CIG7jE3X5Uov37UCrYNuw==}
+  '@astrojs/mdx@5.0.0':
+    resolution: {integrity: sha512-J4rW6eT+qgVw7+RXdBYO4vYyWGeXXQp8wop9dXsOlLzIsVSxyttMCgkGCWvIR2ogBqKqeYgI6YDW93PaDHkCaA==}
     engines: {node: ^20.19.1 || >=22.12.0}
     peerDependencies:
       astro: ^6.0.0-alpha.0
 
-  '@astrojs/node@10.0.0-beta.9':
-    resolution: {integrity: sha512-bQZs2Q/VtH6ekJ4JQNMdqLCtkm2LTf6ANKAJccxyS7huL+ngtUkNyccOPphxRw9d5CmKrE8sW2Izh5EZWf79fw==}
+  '@astrojs/node@10.0.0':
+    resolution: {integrity: sha512-MYz73s+U1CxdSLoYlbB9lrgA2ryi6K8ULH2rM3SBQDFbWtXuTFiBAfG8c5BHy75tsSRn2p0rc7jdFiQAzuZOyw==}
     peerDependencies:
       astro: ^6.0.0-alpha.0
 
-  '@astrojs/prism@4.0.0-beta.2':
-    resolution: {integrity: sha512-3snR85nTXnXvgmFJ43AacCQcylk+mpsiQ5Gmr9hcR5IrEA6+EvaYfaF9jlxZqJIZYey/9ubSRmaERtwDhV/FeA==}
+  '@astrojs/prism@4.0.0':
+    resolution: {integrity: sha512-NndtNPpxaGinRpRytljGBvYHpTOwHycSZ/c+lQi5cHvkqqrHKWdkPEhImlODBNmbuB+vyQUNUDXyjzt66CihJg==}
     engines: {node: ^20.19.1 || >=22.12.0}
 
-  '@astrojs/sitemap@3.6.1-beta.3':
-    resolution: {integrity: sha512-DPILjSDo0BoITSLhs+8WoiLY7GFiiDNQkfb3+tSEyPd94i700jCdkM9jYZEZ6OrCSfHoBYzOaEgiZ1NTSA1/5Q==}
+  '@astrojs/sitemap@3.7.1':
+    resolution: {integrity: sha512-IzQqdTeskaMX+QDZCzMuJIp8A8C1vgzMBp/NmHNnadepHYNHcxQdGLQZYfkbd2EbRXUfOS+UDIKx8sKg0oWVdw==}
 
   '@astrojs/telemetry@3.3.0':
     resolution: {integrity: sha512-UFBgfeldP06qu6khs/yY+q1cDAaArM2/7AEIqQ9Cuvf7B1hNLq0xDrZkct+QoIGyjq56y8IaE2I3CTvG99mlhQ==}
@@ -1127,11 +1127,6 @@ packages:
     peerDependencies:
       acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
 
-  acorn@8.15.0:
-    resolution: {integrity: sha512-NZyJarBfL7nWwIq+FDL6Zp/yHEhePMNnnJ0y3qfieCrmNvYct8uvtiV41UvlSe6apAfk0fY1FbWx+NwfmpvtTg==}
-    engines: {node: '>=0.4.0'}
-    hasBin: true
-
   acorn@8.16.0:
     resolution: {integrity: sha512-UVJyE9MttOsBQIDKw1skb9nAwQuR5wuGD3+82K6JgJlm/Y+KI92oNsMNGZCYdDsVtRHSak0pcV5Dno5+4jh9sw==}
     engines: {node: '>=0.4.0'}
@@ -1163,8 +1158,8 @@ packages:
     peerDependencies:
       astro: ^4.0.0-beta || ^5.0.0-beta || ^3.3.0
 
-  astro@6.0.0-beta.20:
-    resolution: {integrity: sha512-tkN20lWIJ+2cyXlDnb0ZlEsbyqHBmaAzI2ULmKe0vhMN8M5dfuIJgP6RXJt1PDLpA6pUPs0mKgbrHquk/h+6Mg==}
+  astro@6.0.0:
+    resolution: {integrity: sha512-i24mxDGXUzyfKfE4IcWIiLBv9ENDVz98u/TLhjkknGkt/2KIjkR4Q0HeabtaVmIhyWECGd2E61ZeBdFuJ902xw==}
     engines: {node: ^20.19.1 || >=22.12.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -2146,9 +2141,6 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
-  ufo@1.6.1:
-    resolution: {integrity: sha512-9a4/uxlTWJ4+a5i0ooc1rU7C7YOw3wT+UGqdeNNHWnOF9qcMBgLRS+4IYUqbczewFx4mLEig6gawh7X6mFlEkA==}
-
   ufo@1.6.3:
     resolution: {integrity: sha512-yDJTmhydvl5lJzBmy/hyOAA0d+aqCBuwl818haVdYCRrWV84o7YyeVm4QlVHStqNrrJSTb6jKuFAVqAFsr+K3Q==}
 
@@ -2199,9 +2191,6 @@ packages:
 
   unist-util-visit-parents@6.0.2:
     resolution: {integrity: sha512-goh1s1TBrqSqukSc8wrjwWhL0hiJxgA8m4kFxGlQ+8FYQ3C/m11FcTs4YYem7V664AhHVvgoQLk890Ssdsr2IQ==}
-
-  unist-util-visit@5.0.0:
-    resolution: {integrity: sha512-MR04uvD+07cwl/yhVuVWAtw+3GOR/knlL55Nd/wAdblk27GCVt3lqpTivy/tkJcZoNPzTwS1Y+KMojlLDhoTzg==}
 
   unist-util-visit@5.1.0:
     resolution: {integrity: sha512-m+vIdyeCOpdr/QeQCu2EzxX/ohgS8KbnPDgFni4dQsfSCtpz8UqDyY5GjRru8PDKuYn7Fq19j1CQ+nJSsGKOzg==}
@@ -2403,14 +2392,14 @@ snapshots:
 
   '@astrojs/compiler@3.0.0': {}
 
-  '@astrojs/internal-helpers@0.8.0-beta.3':
+  '@astrojs/internal-helpers@0.8.0':
     dependencies:
       picomatch: 4.0.3
 
-  '@astrojs/markdown-remark@7.0.0-beta.11':
+  '@astrojs/markdown-remark@7.0.0':
     dependencies:
-      '@astrojs/internal-helpers': 0.8.0-beta.3
-      '@astrojs/prism': 4.0.0-beta.2
+      '@astrojs/internal-helpers': 0.8.0
+      '@astrojs/prism': 4.0.0
       github-slugger: 2.0.0
       hast-util-from-html: 2.0.3
       hast-util-to-text: 4.0.2
@@ -2432,12 +2421,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/mdx@5.0.0-beta.12(astro@6.0.0-beta.20(@types/node@24.3.0)(rollup@4.59.0)(typescript@5.9.2))':
+  '@astrojs/mdx@5.0.0(astro@6.0.0(@types/node@24.3.0)(rollup@4.59.0)(typescript@5.9.2))':
     dependencies:
-      '@astrojs/markdown-remark': 7.0.0-beta.11
+      '@astrojs/markdown-remark': 7.0.0
       '@mdx-js/mdx': 3.1.1
       acorn: 8.16.0
-      astro: 6.0.0-beta.20(@types/node@24.3.0)(rollup@4.59.0)(typescript@5.9.2)
+      astro: 6.0.0(@types/node@24.3.0)(rollup@4.59.0)(typescript@5.9.2)
       es-module-lexer: 2.0.0
       estree-util-visit: 2.0.0
       hast-util-to-html: 9.0.5
@@ -2451,20 +2440,20 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/node@10.0.0-beta.9(astro@6.0.0-beta.20(@types/node@24.3.0)(rollup@4.59.0)(typescript@5.9.2))':
+  '@astrojs/node@10.0.0(astro@6.0.0(@types/node@24.3.0)(rollup@4.59.0)(typescript@5.9.2))':
     dependencies:
-      '@astrojs/internal-helpers': 0.8.0-beta.3
-      astro: 6.0.0-beta.20(@types/node@24.3.0)(rollup@4.59.0)(typescript@5.9.2)
+      '@astrojs/internal-helpers': 0.8.0
+      astro: 6.0.0(@types/node@24.3.0)(rollup@4.59.0)(typescript@5.9.2)
       send: 1.2.1
       server-destroy: 1.0.1
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/prism@4.0.0-beta.2':
+  '@astrojs/prism@4.0.0':
     dependencies:
       prismjs: 1.30.0
 
-  '@astrojs/sitemap@3.6.1-beta.3':
+  '@astrojs/sitemap@3.7.1':
     dependencies:
       sitemap: 9.0.0
       stream-replace-string: 2.0.0
@@ -2719,7 +2708,7 @@ snapshots:
       hastscript: 9.0.0
       postcss: 8.4.49
       postcss-nested: 6.2.0(postcss@8.4.49)
-      unist-util-visit: 5.0.0
+      unist-util-visit: 5.1.0
       unist-util-visit-parents: 6.0.1
 
   '@expressive-code/plugin-frames@0.38.3':
@@ -3248,8 +3237,6 @@ snapshots:
     dependencies:
       acorn: 8.16.0
 
-  acorn@8.15.0: {}
-
   acorn@8.16.0: {}
 
   anymatch@3.1.3:
@@ -3267,16 +3254,16 @@ snapshots:
 
   astring@1.9.0: {}
 
-  astro-expressive-code@0.38.3(astro@6.0.0-beta.20(@types/node@24.3.0)(rollup@4.59.0)(typescript@5.9.2)):
+  astro-expressive-code@0.38.3(astro@6.0.0(@types/node@24.3.0)(rollup@4.59.0)(typescript@5.9.2)):
     dependencies:
-      astro: 6.0.0-beta.20(@types/node@24.3.0)(rollup@4.59.0)(typescript@5.9.2)
+      astro: 6.0.0(@types/node@24.3.0)(rollup@4.59.0)(typescript@5.9.2)
       rehype-expressive-code: 0.38.3
 
-  astro@6.0.0-beta.20(@types/node@24.3.0)(rollup@4.59.0)(typescript@5.9.2):
+  astro@6.0.0(@types/node@24.3.0)(rollup@4.59.0)(typescript@5.9.2):
     dependencies:
       '@astrojs/compiler': 3.0.0
-      '@astrojs/internal-helpers': 0.8.0-beta.3
-      '@astrojs/markdown-remark': 7.0.0-beta.11
+      '@astrojs/internal-helpers': 0.8.0
+      '@astrojs/markdown-remark': 7.0.0
       '@astrojs/telemetry': 3.3.0
       '@capsizecss/unpack': 4.0.0
       '@clack/prompts': 1.0.1
@@ -3742,7 +3729,7 @@ snapshots:
       nth-check: 2.1.1
       property-information: 6.5.0
       space-separated-tokens: 2.0.2
-      unist-util-visit: 5.0.0
+      unist-util-visit: 5.1.0
       zwitch: 2.0.4
 
   hast-util-to-estree@3.1.0:
@@ -4356,10 +4343,10 @@ snapshots:
 
   mlly@1.7.3:
     dependencies:
-      acorn: 8.15.0
+      acorn: 8.16.0
       pathe: 1.1.2
       pkg-types: 1.3.0
-      ufo: 1.6.1
+      ufo: 1.6.3
 
   mrmime@2.0.1: {}
 
@@ -4487,7 +4474,7 @@ snapshots:
 
   postcss@8.4.49:
     dependencies:
-      nanoid: 3.3.8
+      nanoid: 3.3.11
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
@@ -4912,8 +4899,6 @@ snapshots:
 
   typescript@5.9.2: {}
 
-  ufo@1.6.1: {}
-
   ufo@1.6.3: {}
 
   ultrahtml@1.6.0: {}
@@ -4984,12 +4969,6 @@ snapshots:
     dependencies:
       '@types/unist': 3.0.3
       unist-util-is: 6.0.0
-
-  unist-util-visit@5.0.0:
-    dependencies:
-      '@types/unist': 3.0.3
-      unist-util-is: 6.0.0
-      unist-util-visit-parents: 6.0.2
 
   unist-util-visit@5.1.0:
     dependencies:

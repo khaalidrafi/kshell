@@ -86,7 +86,7 @@ class PageBackground {
 		const lines = Math.ceil(this.height / 35);
 
 		// Loop through the canvas and draw the text
-		this.baseCtx.font = "28px Geist Mono";
+		this.baseCtx.font = "28px JetBrains Mono";
 		this.baseCtx.textAlign = "start";
 		this.baseCtx.textBaseline = "top";
 		this.baseCtx.fillStyle = "rgba(255, 255, 255, 0.01)";
@@ -108,7 +108,7 @@ class PageBackground {
 			Number.parseInt((lines * 0.75).toFixed(), 10),
 		);
 
-		this.overlayCtx.font = "bold 28px Geist Mono";
+		this.overlayCtx.font = "bold 28px JetBrains Mono";
 		this.overlayCtx.textAlign = "start";
 		this.overlayCtx.textBaseline = "top";
 		this.overlayCtx.fillStyle = `rgba(${this.primaryRgb}, 0)`;
@@ -205,7 +205,7 @@ class PageBackground {
 			this.overlayCanvas.height,
 		);
 
-		this.overlayCtx.font = "bold 28px Geist Mono";
+		this.overlayCtx.font = "bold 28px JetBrains Mono";
 		this.overlayCtx.textAlign = "start";
 		this.overlayCtx.textBaseline = "top";
 		this.overlayCtx.shadowBlur = 16;
@@ -277,10 +277,10 @@ class PageBackground {
 }
 
 /**
- * Loads the Geist Mono font. We have to do this asynchronously because the font is not preloaded.
+ * Loads the JetBrains Mono font. We have to do this asynchronously because the font is not preloaded.
  */
 async function loadFont() {
-	const font = new FontFace("Geist Mono", "url(/fonts/GeistMono.woff2)");
+	const font = new FontFace("JetBrains Mono", "url(/fonts/jetbrains-mono.woff2)");
 
 	await font.load();
 
@@ -288,7 +288,7 @@ async function loadFont() {
 }
 
 /**
- * First loads the Geist Mono font, then initializes the background.
+ * First loads the JetBrains Mono font, then initializes the background.
  */
 async function initializeBackground() {
 	await loadFont();

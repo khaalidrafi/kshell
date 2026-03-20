@@ -14,7 +14,11 @@ const config = defineConfig({
 	integrations: [
 		expressiveCode({
 			themes: [kshellDark],
-		}),
+                  styleOverrides: {
+                    // You can also override styles
+                    codeFontFamily: "'JetBrains Mono', monospace",
+                  },
+                }),
 		mdx(),
 		sitemap(),
 		kshell({

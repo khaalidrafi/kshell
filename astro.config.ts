@@ -4,29 +4,29 @@ import sitemap from '@astrojs/sitemap';
 import { defineConfig } from 'astro/config';
 import expressiveCode from 'astro-expressive-code';
 import { loadEnv } from 'vite';
-import spectre from './package/src';
-import { spectreDark } from './src/ec-theme';
+import kshell from './package/src';
+import { kshellDark } from './src/ec-theme';
 
 // https://astro.build/config
 const config = defineConfig({
-	site: 'https://spectre.lou.gg',
+	site: 'https://kshell.lou.gg',
 	output: 'static',
 	integrations: [
 		expressiveCode({
-			themes: [spectreDark],
+			themes: [kshellDark],
 		}),
 		mdx(),
 		sitemap(),
-		spectre({
-			name: 'Spectre',
+		kshell({
+			name: 'kshell',
 			openGraph: {
 				home: {
-					title: 'Spectre',
+					title: 'kshell',
 					description: 'A minimalistic theme for Astro.',
 				},
 				blog: {
 					title: 'Blog',
-					description: 'News and guides for Spectre.',
+					description: 'News and guides for kshell.',
 				},
 				projects: {
 					title: 'Projects',

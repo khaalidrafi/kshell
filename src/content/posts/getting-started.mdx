@@ -1,24 +1,24 @@
 ---
-title: "Getting Started with Spectre"
-description: "Find out how to configure Spectre."
-image: "../assets/spectre.png"
+title: "Getting Started with kshell"
+description: "Find out how to configure kshell."
+image: "../assets/kshell.png"
 createdAt: 12-29-2024
 draft: false
 tags:
   - guide
 ---
 
-Thanks for going with Spectre as your theme of choice! Let's get you set up. You can create a new Astro project with this theme by running:
+Thanks for going with kshell as your theme of choice! Let's get you set up. You can create a new Astro project with this theme by running:
 
 ```bash
 # npm
-npm create astro@latest -- --template louisescher/spectre
+npm create astro@latest -- --template louisescher/kshell
 
 # pnpm
-pnpm create astro@latest --template louisescher/spectre
+pnpm create astro@latest --template louisescher/kshell
 
 # yarn
-yarn create astro --template louisescher/spectre
+yarn create astro --template louisescher/kshell
 ```
 
 First, a small introduction to the project structure:
@@ -58,7 +58,7 @@ import expressiveCode from 'astro-expressive-code';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import pagefind from 'astro-pagefind';
-import spectre from './package/integration';
+import kshell from './package/integration';
 
 // https://astro.build/config
 export default defineConfig({
@@ -74,18 +74,18 @@ export default defineConfig({
   // ...
   integrations: [
     // ...
-    spectre({
+    kshell({
 
-      name: 'Spectre',
+      name: 'kshell',
 
       openGraph: {
         home: {
-          title: 'Spectre',
+          title: 'kshell',
           description: 'A minimalistic theme for Astro.'
         },
         blog: {
           title: 'Blog',
-          description: 'News and guides for Spectre.'
+          description: 'News and guides for kshell.'
         },
         projects: {
           title: 'Projects'
@@ -122,7 +122,7 @@ The `info.json` file contains the quick info you can see below your profile pict
 }
 ```
 
-Spectre supports both [Lucide](https://lucide.dev) and [Simple Icons](https://simpleicons.org).
+kshell supports both [Lucide](https://lucide.dev) and [Simple Icons](https://simpleicons.org).
 
 ### Socials
 
@@ -136,7 +136,7 @@ The `socials.json` file is similar to the `info.json` file in terms of structure
     "name": "github" // The name of the icon.
   },
   "text": "GitHub", // The text in the link
-  "link": "https://github.com/louisescher/spectre" // The actual destination of the link
+  "link": "https://github.com/louisescher/kshell" // The actual destination of the link
 }
 ```
 
@@ -172,9 +172,9 @@ Each post can provide the following information in the frontmatter:
 
 ```mdx
 ---
-title: "Getting Started with Spectre" # The title of the post
-description: "Find out how to configure Spectre." # The description of the post
-image: "../assets/spectre.png" # The image to be used as the OG image, referenced with a relative path.
+title: "Getting Started with kshell" # The title of the post
+description: "Find out how to configure kshell." # The description of the post
+image: "../assets/kshell.png" # The image to be used as the OG image, referenced with a relative path.
 createdAt: 12-29-2024 # Creation date
 updatedAt: 12-30-2024 # Optional, will be used in the meta tags to tell Google and co. that a post was updated
 draft: false # Optional, can be used to hide a post completely
@@ -193,13 +193,13 @@ The `projects/` directory is similar to the `posts/` directory, but for projects
 
 ```mdx
 ---
-title: Spectre # The title of the project
+title: kshell # The title of the project
 date: 12-29-2024 # Date of publication
-description: Spectre is a terminal-inspired theme for Astro, built using Astro and TypeScript. # Description of the project
-image: ../assets/spectre.png # The image to be used as the OG image, referenced with a relative path
+description: kshell is a terminal-inspired theme for Astro, built using Astro and TypeScript. # Description of the project
+image: ../assets/kshell.png # The image to be used as the OG image, referenced with a relative path
 info: # A TOML-like list of information about the project
   - text: GitHub # Text for this info
-    link: https://github.com/louisescher/spectre # Optional if you want to link to somewhere
+    link: https://github.com/louisescher/kshell # Optional if you want to link to somewhere
     icon:
       type: lucide # Icon library, either "lucide" or "simple-icons"
       name: github # The name of the icon
@@ -212,7 +212,7 @@ The `src/content/other/` directory is home to all MDX content which does not nee
 
 ## Deploying
 
-Spectre uses the [`node`](https://docs.astro.build/en/guides/integrations-guide/node/) adapter by default. If you want to deploy to Netlify or Vercel, you need their respective adapters:
+kshell uses the [`node`](https://docs.astro.build/en/guides/integrations-guide/node/) adapter by default. If you want to deploy to Netlify or Vercel, you need their respective adapters:
 - [`@astrojs/netlify`](https://docs.astro.build/en/guides/integrations-guide/netlify/)
 - [`@astrojs/vercel`](https://docs.astro.build/en/guides/integrations-guide/vercel/)
 
@@ -256,18 +256,18 @@ As with all themes, you might wish to modify it. In terms of content, you should
 
 ### Changing the code block colors
 
-Code snippets declared in `.md` and `.mdx` files are powered by [Expressive Code](https://expressive-code.com). By default, Spectre uses a variation of GitHub's dark theme with custom background colors. 
+Code snippets declared in `.md` and `.mdx` files are powered by [Expressive Code](https://expressive-code.com). By default, kshell uses a variation of GitHub's dark theme with custom background colors. 
 
 If you want to change the colors of the code snippets (syntax highlighting, background color, etc.) you can provide your desired theme in the `astro.config.ts` file as such:
 
 ```ts ins={8} del={1,7} title="astro.config.ts"
-import { spectreDark } from './src/ec-theme';
+import { kshellDark } from './src/ec-theme';
 // ...
 export default defineConfig({
   // ...
   integrations: [
     expressiveCode({
-      themes: [spectreDark],
+      themes: [kshellDark],
       themes: ['catppuccin-mocha'],
     }),
     // ... 

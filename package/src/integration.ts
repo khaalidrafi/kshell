@@ -52,8 +52,8 @@ export default function integration(
 	const validatedOptions = optionsSchema.parse(options);
 
 	const globals = viteVirtualModulePluginBuilder(
-		"spectre:globals",
-		"spectre-theme-globals",
+		"kshell:globals",
+		"kshell-theme-globals",
 		`
     export const name = ${JSON.stringify(validatedOptions.name)};
     export const themeColor = ${JSON.stringify(validatedOptions.themeColor ?? "#8c5cf5")};
@@ -67,7 +67,7 @@ export default function integration(
 	);
 
 	return {
-		name: "spectre-theme",
+		name: "kshell-theme",
 		hooks: {
 			"astro:config:setup": ({ updateConfig }) => {
 				updateConfig({

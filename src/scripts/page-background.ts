@@ -74,7 +74,7 @@ class PageBackground {
 	private initBackground = () => {
 		let text: string =
 			document.title.toLowerCase().split(" | ")[0].replace(/\s/g, "_") ||
-			"spectre";
+			"kshell";
 
 		// Add additional underscore to separate words
 		if (text.includes("_")) {

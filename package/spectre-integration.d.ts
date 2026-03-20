@@ -24,7 +24,7 @@ interface OpenGraph {
 	projects: OpenGraphInfo;
 }
 
-declare module "spectre:globals" {
+declare module "kshell:globals" {
 	/**
 	 * The name that should be displayed on the main page.
 	 */

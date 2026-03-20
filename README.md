@@ -1,23 +1,21 @@
-![Spectre, a terminal-inspired theme for Astro.](./images/README.png)
-
-Spectre is a terminal-inspired theme for Astro, built using TypeScript and Astro.
+`kshell` is a terminal-inspired theme for Astro, built using TypeScript and Astro.
 
 ## Getting Started
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/louisescher/spectre/tree/master)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/louisescher/spectre/tree/master)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/louisescher/kshell/tree/master)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/louisescher/kshell/tree/master)
 
-Alternatively, you can create a new Astro project with Spectre like this:
+Alternatively, you can create a new Astro project with kshell like this:
 
 ```bash
 # npm
-npm create astro@latest -- --template louisescher/spectre
+npm create astro@latest -- --template louisescher/kshell
 
 # pnpm
-pnpm create astro@latest --template louisescher/spectre
+pnpm create astro@latest --template louisescher/kshell
 
 # yarn
-yarn create astro --template louisescher/spectre
+yarn create astro --template louisescher/kshell
 ```
 
 ## Features
@@ -34,8 +32,8 @@ yarn create astro --template louisescher/spectre
 
 ## Curious?
 
-Head over to [the preview page](https://spectre.lou.gg) to find out more!
+Head over to [the preview page](https://kshell.lou.gg) to find out more!
 
-### Spectre Integration
+### kshell Integration
 
-If you want to know more about how the custom integration that is used in the `astro.config.ts` file works, head over to the [integration's own README](https://github.com/louisescher/spectre/tree/master/package)!
+If you want to know more about how the custom integration that is used in the `astro.config.ts` file works, head over to the [integration's own README](https://github.com/louisescher/kshell/tree/master/package)!

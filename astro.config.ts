@@ -9,7 +9,7 @@ import { kshellDark } from './src/ec-theme';
 
 // https://astro.build/config
 const config = defineConfig({
-	site: 'https://kshell.lou.gg',
+	site: 'https://kshell.khalidrafi.tech',
 	output: 'static',
 	integrations: [
 		expressiveCode({

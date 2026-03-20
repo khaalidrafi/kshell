@@ -32,8 +32,8 @@ yarn create astro --template louisescher/kshell
 
 ## Curious?
 
-Head over to [the preview page](https://kshell.lou.gg) to find out more!
+Head over to [the preview page](https://kshell.khalidrafi.tech) to find out more!
 
 ### kshell Integration
 
-If you want to know more about how the custom integration that is used in the `astro.config.ts` file works, head over to the [integration's own README](https://github.com/louisescher/kshell/tree/master/package)!
+If you want to know more about how the custom integration that is used in the `astro.config.ts` file works, head over to the [integration's own README](https://git.khalidrafi.tech/kshell/tree/master/package)!

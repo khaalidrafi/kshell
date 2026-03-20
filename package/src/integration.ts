@@ -19,7 +19,7 @@ export const optionsSchema = z.object({
 	 */
 	name: z.string(),
 	/**
-	 * The theme color of the site. Optional. Defaults to `#8c5cf5`.
+	 * The theme color of the site. Optional. Defaults to `#2323FF`.
 	 */
 	themeColor: z.string().optional(),
 	/**
@@ -56,7 +56,7 @@ export default function integration(
 		"kshell-theme-globals",
 		`
     export const name = ${JSON.stringify(validatedOptions.name)};
-    export const themeColor = ${JSON.stringify(validatedOptions.themeColor ?? "#8c5cf5")};
+    export const themeColor = ${JSON.stringify(validatedOptions.themeColor ?? "#2323FF")};
     export const twitterHandle = ${JSON.stringify(validatedOptions.twitterHandle)};
     export const openGraph = {
       home: ${JSON.stringify(validatedOptions.openGraph.home)},

@@ -280,7 +280,10 @@ class PageBackground {
  * Loads the JetBrains Mono font. We have to do this asynchronously because the font is not preloaded.
  */
 async function loadFont() {
-	const font = new FontFace("JetBrains Mono", "url(/fonts/jetbrains-mono.woff2)");
+	const font = new FontFace(
+		"JetBrains Mono",
+		"url(/fonts/jetbrains-mono.woff2)",
+	);
 
 	await font.load();
 

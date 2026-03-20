@@ -45,7 +45,6 @@ export const optionsSchema = z.object({
 	}),
 });
 
-
 export default function integration(
 	options: z.infer<typeof optionsSchema>,
 ): AstroIntegration {

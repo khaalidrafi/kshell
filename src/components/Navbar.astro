@@ -5,13 +5,22 @@ import Icon from "./Icon.astro";
 const path = Astro.url.pathname;
 ---
 <nav>
-    <a class="site-title" href="/">{username}:~$</a>
-  <ul>
-    <li>
-      <a href="/blog" class:list={{ active: path.startsWith('/blog') }}>Blog</a>
-    </li>
-    <li class="nav-separator">/</li>
-    <li>
+    <a class="site-title" href="/">
+        <Icon
+            type="lucide"
+            name="terminal"
+            width={24}
+            height={24}
+            class="glow-icon"
+        />
+        <span id="shell-prompt">{username}:~$</span>
+    </a>
+        <ul>
+            <li>
+                <a href="/blog" class:list={{ active: path.startsWith('/blog') }}>Blog</a>
+            </li>
+            <li class="nav-separator">/</li>
+            <li>
       <a href="/projects" class:list={{ active: path.startsWith('/projects') }}>Projects</a>
     </li>
     <li class="nav-separator">/</li>
@@ -166,10 +175,20 @@ const path = Astro.url.pathname;
   }
 
   .site-title {
-    font-weight: 800;
+    display: flex;
+    gap: 5px;
+    align-items: center;
     text-decoration: none;
     font-size: 1.25em;
     z-index: 2;
+  }
+
+  nav .site-title:hover {
+    background-color: inherit;    
+  }
+
+  #shell-prompt:hover {
+    color: var(--primary-light);    
   }
 
   nav ul {

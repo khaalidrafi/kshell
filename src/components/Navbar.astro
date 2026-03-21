@@ -176,7 +176,7 @@ const path = Astro.url.pathname;
 
   .site-title {
     display: flex;
-    gap: 5px;
+    gap: 7px;
     align-items: center;
     text-decoration: none;
     font-size: 1.25em;
@@ -186,6 +186,11 @@ const path = Astro.url.pathname;
   nav .site-title:hover {
     background-color: inherit;    
   }
+
+ #shell-prompt {
+   background-color: #353535;
+   padding: 0.125rem 0.25rem;
+ }
 
   #shell-prompt:hover {
     color: var(--primary-light);    

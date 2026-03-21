@@ -1,0 +1,14 @@
+{
+  "name": "kshell",
+  // Set this to today's date
+  "compatibility_date": "2026-03-21",
+  "assets": {
+    "directory": "./dist"
+  },
+      "routes": [
+        {
+            "pattern": "kshell.khalidrafi.tech",
+            "custom_domain": true
+        }
+    ]
+}

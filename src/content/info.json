@@ -3,17 +3,17 @@
 		"id": 1,
 		"icon": {
 			"type": "lucide",
-			"name": "cake"
+			"name": "info"
 		},
-		"text": "1 year old"
+		"text": "A terminal-inspired blog theme"
 	},
 	{
 		"id": 2,
 		"icon": {
 			"type": "lucide",
-			"name": "earth"
+			"name": "cog"
 		},
 		"type": "lucide",
-		"text": "Made in Germany"
+		"text": "Built with Astro and TypeScript"
 	}
 ]

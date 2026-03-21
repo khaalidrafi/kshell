@@ -30,6 +30,10 @@ declare module "kshell:globals" {
 	 */
 	export const name: string;
 	/**
+	 * The username that should be displayed on the shell prompt.
+	 */
+	export const username: string;
+	/**
 	 * The theme color of the site.
 	 */
 	export const themeColor: string;

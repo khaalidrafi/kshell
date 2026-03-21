@@ -19,6 +19,10 @@ export const optionsSchema = z.object({
 	 */
 	name: z.string(),
 	/**
+	 * The username that should be displayed on the shell prompt.
+	 */
+	username: z.string(),
+	/**
 	 * The theme color of the site. Optional. Defaults to `#2323FF`.
 	 */
 	themeColor: z.string().optional(),
@@ -55,6 +59,7 @@ export default function integration(
 		"kshell-theme-globals",
 		`
     export const name = ${JSON.stringify(validatedOptions.name)};
+    export const username = ${JSON.stringify(validatedOptions.username)};
     export const themeColor = ${JSON.stringify(validatedOptions.themeColor ?? "#2323FF")};
     export const twitterHandle = ${JSON.stringify(validatedOptions.twitterHandle)};
     export const openGraph = {

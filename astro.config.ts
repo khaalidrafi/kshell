@@ -23,6 +23,7 @@ const config = defineConfig({
 		sitemap(),
 		kshell({
 			name: 'kshell',
+                        username: 'khalid',
 			openGraph: {
 				home: {
 					title: 'kshell',

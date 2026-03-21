@@ -1,11 +1,11 @@
 ---
-import { name } from "kshell:globals";
+import { name, username } from "kshell:globals";
 import Icon from "./Icon.astro";
 
 const path = Astro.url.pathname;
 ---
 <nav>
-  <a class="site-title" href="/">{name}</a>
+    <a class="site-title" href="/">{username}:~$</a>
   <ul>
     <li>
       <a href="/blog" class:list={{ active: path.startsWith('/blog') }}>Blog</a>

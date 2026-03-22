@@ -16,7 +16,7 @@
     grid-template-rows: auto;
   }
 
-  @media screen and (max-width: 1380px) {
+  @media screen and (max-width: 1024px) {
     .layout-grid {
       grid-template-columns: 1fr;
     }
@@ -28,4 +28,21 @@
       gap: 1rem;
     }
   }
+</style>
+
+<style is:global>
+ .layout-grid-left,
+ .layout-grid-right {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   gap: 2rem;
+ }
+
+ @media screen and (max-width: 640px) {
+   .layout-grid-left,
+   .layout-grid-right {
+     gap: 1rem;
+   }
+ }
 </style>

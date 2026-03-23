@@ -5,6 +5,7 @@ import type { CollectionEntry } from "astro:content";
 import { getCollection, render } from "astro:content";
 import type { GetStaticPaths } from "astro";
 import Card from "../../components/Card.astro";
+import TopicsCard from "../../components/TopicsCard.astro";
 import ImageGlow from "../../components/ImageGlow.astro";
 import Layout from "../../layouts/Layout.astro";
 
@@ -47,6 +48,8 @@ export const getStaticPaths = (async () => {
 	return posts.map((post) => ({ params: { post: post.id }, props: { post } }));
 }) satisfies GetStaticPaths;
 
+const tags = post.data.tags.map((tag) => tag.id);
+
 const { Content, headings } = await render(post);
 ---
 
@@ -59,22 +62,23 @@ const { Content, headings } = await render(post);
 		updatedAt: post.data.updatedAt,
 	}}
 >
-	<div class="left" slot="left">
-		<Card class="toc-card">
-			<h2 class="no-mt">Table of contents</h2>
-			<ol>
-				<li class="toc-li">
-					<a href={"#_top"} class="active">{post.data.title}</a>
-				</li>
-				{
-					headings.map((heading) => (
-						<li class="toc-li" data-depth={heading.depth}>
-							<a href={`#${heading.slug}`}>{heading.text}</a>
-						</li>
-					))
-				}
-			</ol>
-		</Card>
+	<div class="layout-grid-left left" slot="left">
+            <TopicsCard title="Topics" tags={tags}> </TopicsCard>
+            <Card class="toc-card">
+                <h2 class="no-mt">Table of contents</h2>
+                <ol>
+                    <li class="toc-li">
+                        <a href={"#_top"} class="active">{post.data.title}</a>
+                    </li>
+                    {
+                    headings.map((heading) => (
+                    <li class="toc-li" data-depth={heading.depth}>
+                        <a href={`#${heading.slug}`}>{heading.text}</a>
+                    </li>
+                    ))
+                    }
+                </ol>
+            </Card>
 	</div>
 	<article slot="right" data-pagefind-body>
 		<Card>
@@ -95,8 +99,6 @@ const { Content, headings } = await render(post);
 						<span
 							>{timeToRead(post)} minute{timeToRead(post) === 1 ? "" : "s"} to read</span
 						>
-						<span>/</span>
-						<span>Tags: {post.data.tags.map((tag) => tag.id).join(", ")}</span>
 					</div>
 				</div>
 			</div>

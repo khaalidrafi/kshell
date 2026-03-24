@@ -2,20 +2,20 @@
 
 ## Getting Started
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/louisescher/kshell/tree/master)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/louisescher/kshell/tree/master)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/khaalidrafi/kshell/tree/master)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/khaalidrafi/kshell/tree/master)
 
 Alternatively, you can create a new Astro project with kshell like this:
 
 ```bash
 # npm
-npm create astro@latest -- --template louisescher/kshell
+npm create astro@latest -- --template khaalidrafi/kshell
 
 # pnpm
-pnpm create astro@latest --template louisescher/kshell
+pnpm create astro@latest --template khaalidrafi/kshell
 
 # yarn
-yarn create astro --template louisescher/kshell
+yarn create astro --template khaalidrafi/kshell
 ```
 
 ## Features
